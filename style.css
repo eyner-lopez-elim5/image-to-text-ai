@@ -1,0 +1,123 @@
+/* Estilo para la tabla extraída */
+.extracted-table {
+  width: 100%;  /* La tabla ocupa todo el ancho disponible */
+  border-collapse: collapse; /* Asegura que los bordes se fusionen */
+  margin-top: 20px; /* Espacio por encima de la tabla */
+  text-align: left; /* Alineación del texto en las celdas */
+}
+
+/* Estilo para las filas de la tabla */
+.extracted-table tr {
+  border-bottom: 1px solid #ddd; /* Borde abajo de cada fila */
+}
+
+/* Estilo para las celdas de la tabla */
+.extracted-table td {
+  padding: 10px; /* Espaciado dentro de las celdas */
+  border-left: 1px solid #ddd; /* Borde izquierdo para cada celda */
+  border-top: 1px solid #ddd; /* Borde superior para cada celda */
+  word-wrap: break-word; /* Asegura que el texto largo se ajuste */
+}
+
+/* Estilo para la primera fila si deseas destacar los encabezados */
+.extracted-table th {
+  background-color: #f2f2f2; /* Fondo gris claro */
+  font-weight: bold; /* Negrita para los encabezados */
+}
+
+.extracted-table {
+  text-align: left;
+}
+
+/* Contenedor principal */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contenedor de contenido: imagen y tabla */
+.content {
+  display: flex; /* Flexbox para colocar los elementos en una fila */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  margin-top: 20px;
+  height: 500px; /* Altura fija para ambos elementos */
+}
+
+/* Imagen */
+.image-container {
+  flex: 1; /* Ocupa el 50% del espacio disponible */
+  max-width: 50%; /* Limita el ancho al 50% */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  overflow: hidden; /* Esconde cualquier parte de la imagen que exceda el contenedor */
+}
+
+img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+  max-height: 100%; /* Asegura que la imagen no sobrepase la altura del contenedor */
+}
+
+/* Tabla */
+.text-overlay-container {
+  flex: 1; /* Ocupa el 50% del espacio disponible */
+  max-width: 50%; /* Limita el ancho al 50% */
+  height: 100%; /* Altura completa del contenedor */
+  overflow-y: auto; /* Scroll vertical si el contenido excede la altura */
+  border: 1px solid #ccc; /* Borde opcional para separar visualmente la tabla */
+  padding: 10px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
+}
+
+/* Tabla específica */
+table {
+  width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black; /* Bordes alrededor de las celdas */
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; /* Color de fondo para encabezados */
+}
+
+/* Scroll en el contenedor de la tabla */
+.text-overlay-container::-webkit-scrollbar {
+  width: 10px; /* Ancho del scroll */
+}
+
+.text-overlay-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color del thumb del scroll */
+  border-radius: 5px;
+}
+
+.text-overlay-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del thumb al pasar el mouse */
+}
+
+
+.logo-left, .logo-right {
+  position: absolute;
+  top: 10px;
+  width: 100px;
+}
+.logo-left {
+  left: 10px;
+}
+.logo-right {
+  right: 10px;
+}
