@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formData.append('image', file);
     
         // Enviar el archivo con fetch
-        fetch('http://localhost:3000/api/extract-text', {
+        fetch('https://imagetotext.elim5.com/api/extract-text', {
           method: 'POST',
           body: formData
         })
